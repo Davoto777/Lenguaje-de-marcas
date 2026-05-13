@@ -11,9 +11,7 @@
 <header>
     <h1>Guia a COVADONDA</h1>
     <nav>
-        <!-- Este boton es el q servira para q el JS despliegue el menu -->
         <button id="btnMenu">Menú</button>
-        <!-- Lista de enlaces. De primeras no se ve por la clase .oculto -->
         <ul id="menuDesplegable" class="oculto">
             <li><a href="#galeria">Galería</a></li>
             <li><a href="#calculadora">Entradas</a></li>
@@ -23,14 +21,11 @@
 </header>
 
 <main>
-    <!-- Seccion para las fotos del evento -->
     <section id="galeria">
         <h2>Galería del Evento</h2>
         <div class="galeria">
-            <!-- La imagen grande q se ve al principio -->
             <img id="imgGrande" src="https://i.postimg.cc/K8SvNYDd/Imagen-Principal.jpg" alt="Imagen principal del evento">
             <div class="miniaturas">
-              <!-- Estas son las fotos pequeñisimas. He usado la clase thumb para controlarlas todas a la vez -->
               <img class="thumb" src="https://i.postimg.cc/W1Lbn47c/Miniatura1.jpg" alt="Miniatura 1">
               <img class="thumb" src="https://i.postimg.cc/y84YPNTq/miniatura2.jpg" alt="Miniatura 2">
               <img class="thumb" src="https://asturias.com/asturiasbasica/imagenes/lagos-de-covadonga-1.jpg" alt="Miniatura 3">
@@ -38,15 +33,12 @@
         </div>
     </section>
 
-    <!-- Parte del formulario para elegir entradas -->
     <section id="calculadora">
         <h2>Compra tu Entrada</h2>
         <form id="formCalc">
-            <!-- Pongo min 1 para q no nos vacilen con cantidades negativas -->
             <label for="cantidad">Cantidad:</label>
             <input type="number" id="cantidad" min="1">
 
-            <!-- El valor del option es el precio para multiplicar facil en JS -->
             <label for="tipo">Tipo:</label>
             <select id="tipo">
                 <option value="10">Normal (10€)</option>
@@ -58,7 +50,6 @@
         </form>
     </section>
 
-    <!-- Seccion de registro de usuarios -->
     <section id="contacto">
         <h2>Registro</h2>
         <form id="formContacto">
